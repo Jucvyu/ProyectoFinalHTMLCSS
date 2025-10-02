@@ -1,0 +1,528 @@
+/* Reset de estilos básicos para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fffbeb 0%, #ffedd5 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ===================== HEADER ===================== */
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Contenedor principal del header */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Distribución interna del header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+/* Logo y texto del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #16a34a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menú de navegación principal */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fef3c7;
+}
+
+/* Iconos del header (ej: usuario, carrito) */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-icons i {
+    color: white;
+    font-size: 1.25rem;
+}
+
+/* Botón para menú móvil */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* ===================== MAIN ===================== */
+/* Contenedor principal de la página */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* ===================== SIDEBAR ===================== */
+/* Barra lateral */
+.sidebar {
+    width: 16rem;
+    flex-shrink: 0;
+}
+
+/* Contenido de la barra lateral */
+.sidebar-content {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 10rem;
+}
+
+/* Título de la barra lateral */
+.sidebar h2 {
+    color: #f97316;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Menú de navegación de la barra lateral */
+.sidebar nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar nav a:hover {
+    background: #ffbd68;
+}
+
+/* ===================== CONTENIDO PRINCIPAL ===================== */
+/* Área principal de contenido */
+.main-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ===================== INTRODUCCIÓN ===================== */
+/* Sección de introducción */
+.intro {
+    background: linear-gradient(135deg, #ffbf58 0%, #08ea2e 100%);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.intro-content {
+    max-width: 80rem
+}
+
+.intro-content p {
+    line-height: 1.6;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+.intro h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #1f2937;
+    text-decoration: underline;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.img-intro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.img-intro img {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.img-intro img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón principal */
+.btn {
+    background: #f97316;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ===================== CARACTERÍSTICAS ===================== */
+/* Sección de características */
+.features {
+    margin-bottom: 3rem;
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    text-decoration: underline;
+}
+
+/* Grid de características */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjeta de característica */
+.feature-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    color: #f97316;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.feature-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* ===================== MENÚ ======@=============== */
+/* Sección del menú */
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+/* Grid del menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Tarjeta de ítem del menú */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item .btn {
+    margin-top: auto;       
+    align-self: center;     
+    background: #f97316;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de cada ítem del menú */
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.menu-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Precio del menú */
+.menu-price {
+    color: #f97316;
+    font-weight: bold;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+.menu-item img {
+    width: 100%;
+    height: 50%;
+}
+
+.textopeq {
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+
+/* ===================== FOOTER ===================== */
+/* Pie de página */
+footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 0 2rem;
+}
+
+/* Contenedor del footer */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Grid del footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Sección del footer */
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+/* Logo del footer */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-icon {
+    width: 2rem;
+    height: 2rem;
+    background: #16a34a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Texto del footer */
+.footer-section p {
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+/* Línea inferior del footer */
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 2rem;
+    text-align: center;
+    color: #9ca3af;
+}
+.header-container nav ul{
+    font-size: 20px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo-text{
+        display: none;
+    }
+
+    .header-content nav ul{
+        font-size: 18px;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar h2{
+        font-size: 40px;
+    }
+
+    .sidebar ul li a{
+        font-size: 18px;
+    }
+
+    .sidebar-content {
+        position: static;
+    }
+
+    .intro h2 {
+        font-size: 2.875rem;
+    }
+
+    .intro p {
+        font-size: 1.125rem;
+    }
+
+    .features-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img-intro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .img-intro img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .intro-content p{
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .feature-card h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .feature-card p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .menu-item h3{
+        font-size: 25px;
+    }
+
+    .menu-item p{
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .menu-item .btn{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+    .menu-item img {
+        width: 100%;
+        height: 35%;
+    }
+}
